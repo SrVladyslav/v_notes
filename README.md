@@ -1,0 +1,169 @@
+# v_notes
+
+A practical collection of **algorithmic patterns and problem-solving techniques**, implemented mainly in **Modern C++** and **Python**.
+
+The goal of this repository is not to collect hundreds of isolated coding problems. Instead, it focuses on understanding the **reusable patterns behind them** — the techniques that appear repeatedly across algorithmic problems.
+
+Use it as a reference when learning algorithms, preparing for technical interviews, or simply when you have spent too much time building APIs and need to reactivate the algorithmic part of your brain.
+
+## Why this repository?
+
+Many algorithmic problems look completely different at first, but often reduce to a relatively small set of patterns. The idea is to understand:
+
+> **What state do I need to maintain, how should it change, and what allows me to avoid recomputing everything?**
+
+Once the underlying pattern becomes familiar, new problems become much easier to recognize and solve.
+
+## Repository Structure
+
+> [!NOTE]
+> This index may change over time
+
+```text
+v_notes/
+└── patterns/
+    ├── floating_window/
+    │   ├── fixed_size_window/
+    │   ├── not_overlaping_windows/
+    │   └── overlapping_windows/
+    │
+    ├── hash_tables/
+    │   └── counting_technique/
+    │
+    └── two_pointers/
+        ├── fast_and_slow/
+        ├── from_two_sides/
+        └── pointer_for_everyone/
+```
+
+### Pattern Index
+
+#### [Floating Window](patterns/floating_window/)
+
+- [Fixed Size Window](patterns/floating_window/fixed_size_window/)
+- [Not Overlapping Windows](patterns/floating_window/not_overlaping_windows/)
+- [Overlapping Windows](patterns/floating_window/overlapping_windows/)
+
+#### [Hash Tables](patterns/hash_tables/)
+
+- [Counting Technique](patterns/hash_tables/counting_technique/)
+
+#### [Two Pointers](patterns/two_pointers/)
+
+- [Fast and Slow](patterns/two_pointers/fast_and_slow/)
+- [From Two Sides](patterns/two_pointers/from_two_sides/)
+- [Pointer for Everyone](patterns/two_pointers/pointer_for_everyone/)
+
+Each directory focuses on a particular pattern and contains small examples designed to demonstrate **how and why the approach works**.
+
+## Languages
+
+Examples are primarily implemented in:
+
+- **Modern C++** (C++23)
+- **Python**
+
+Using both languages makes it easier to separate the algorithm itself from language-specific syntax.
+
+Python is useful for expressing the idea quickly, while C++ exposes more details about memory, containers, iterators, references, and performance.
+
+## Example Philosophy
+
+Solutions in this repository try to emphasize the reasoning behind the algorithm.
+
+For example, instead of memorizing a sliding-window implementation:
+
+```cpp
+for (int right = 0; right < nums.size(); right++)
+{
+    // ...
+}
+```
+
+the goal is to understand the state transitions:
+
+```text
+1. What does the current window represent?
+2. What state needs to be stored?
+3. What happens when right moves?
+4. When is the window invalid?
+5. What happens when left moves?
+6. When should the result be updated?
+```
+
+This makes the pattern transferable to different problems.
+
+## Complexity
+
+Each solution should aim to make the relevant complexity explicit:
+
+```text
+Time:   O(...)
+Memory: O(...)
+```
+
+A major focus of the repository is recognizing when maintaining incremental state can replace repeated work.
+
+For example:
+
+```text
+Recalculate every window: O(n × k)
+
+Maintain window state:    O(n)
+```
+
+## Running the Examples
+
+### C++
+
+Using GCC:
+
+```bash
+g++ -static -std=c++23 example.cpp -o example.exe
+./example
+```
+
+On Windows:
+
+```powershell
+g++ -std=c++23 example.cpp -o example.exe
+.\example.exe
+```
+
+### Python
+
+```bash
+python example.py
+```
+
+## Notes
+
+This repository is intentionally a **learning/reference project**.
+
+Some examples may contain additional comments or intermediate implementations that would normally be removed from production code. They are kept when they help explain the reasoning behind a pattern.
+
+The objective is not:
+
+> memorize solutions
+
+but rather:
+
+> recognize patterns, understand their state, and reconstruct the solution when needed.
+
+## Roadmap
+
+More patterns and examples will be added over time, including topics such as:
+
+- Binary search
+- Prefix sums
+- Monotonic stacks
+- Heaps
+- Trees
+- Graphs
+- Backtracking
+- Dynamic programming
+- Greedy algorithms
+
+---
+
+**v_notes** — algorithm patterns to refresh the brain after spending too much time writing APIs or using LLMs. You have the problem statements on top of the code, so you can easily try it for yourself before reading the explanation.
