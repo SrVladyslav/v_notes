@@ -38,6 +38,8 @@ v_notes/
 
 ### Pattern Index
 
+Each directory focuses on a particular pattern and contains small examples designed to demonstrate **how and why the approach works**.
+
 #### [Floating Window](patterns/floating_window/)
 
 - [Fixed Size Window](patterns/floating_window/fixed_size_window/)
@@ -53,8 +55,6 @@ v_notes/
 - [Fast and Slow](patterns/two_pointers/fast_and_slow/)
 - [From Two Sides](patterns/two_pointers/from_two_sides/)
 - [Pointer for Everyone](patterns/two_pointers/pointer_for_everyone/)
-
-Each directory focuses on a particular pattern and contains small examples designed to demonstrate **how and why the approach works**.
 
 ## Languages
 
