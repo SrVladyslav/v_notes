@@ -27,18 +27,28 @@ v_notes/
     │   ├── not_overlaping_windows/
     │   └── overlapping_windows/
     │
+    ├── binary_search/
+    │   ├── basic_binary_search/
+    │   └── double_binary_search/
+    │
     ├── hash_tables/
-    │   └── counting_technique/
+    │   ├── counting_technique/
+    │   └── key_value/
     │
     ├── dots_and_segments/
     │   ├── dots_method/
     │   ├── segments_method/
     │   └── two_pointers_on_segments/
     │
-    └── two_pointers/
-        ├── fast_and_slow/
-        ├── from_two_sides/
-        └── pointer_for_everyone/
+    ├── two_pointers/
+    │   ├── fast_and_slow/
+    │   ├── from_two_sides/
+    │   └── pointer_for_everyone/
+    │
+    └── stack/
+        ├── monotonic_stack/
+        ├── pseudo_stack/
+        └── stack_of_intermediate_results/
 ```
 
 ### Pattern Index
@@ -51,9 +61,15 @@ Each directory focuses on a particular pattern and contains small examples desig
 - [Not Overlapping Windows](patterns/floating_window/not_overlaping_windows/)
 - [Overlapping Windows](patterns/floating_window/overlapping_windows/)
 
+#### [Binary Search](patterns/binary_search/)
+
+- [Basic Binary Search](patterns/binary_search/basic_binary_search/)
+- [Double Binary Search](patterns/binary_search/double_binary_search/)
+
 #### [Hash Tables](patterns/hash_tables/)
 
 - [Counting Technique](patterns/hash_tables/counting_technique/)
+- [Key Value](patterns/hash_tables/key_value/)
 
 #### [Dots and Segments](patterns/dots_and_segments/)
 
@@ -66,6 +82,12 @@ Each directory focuses on a particular pattern and contains small examples desig
 - [Fast and Slow](patterns/two_pointers/fast_and_slow/)
 - [From Two Sides](patterns/two_pointers/from_two_sides/)
 - [Pointer for Everyone](patterns/two_pointers/pointer_for_everyone/)
+
+#### [Stack](patterns/stack/)
+
+- [Monotonic Stack](patterns/stack/monotonic_stack/)
+- [Pseudo Stack](patterns/stack/pseudo_stack/)
+- [Stack of Intermediate Results](patterns/stack/stack_of_intermediate_results/)
 
 ## Languages
 
@@ -165,9 +187,7 @@ but rather:
 
 More patterns and examples will be added over time, including topics such as:
 
-- Binary search
 - Prefix sums
-- Monotonic stacks
 - Heaps
 - Trees
 - Graphs
