@@ -30,6 +30,11 @@ v_notes/
     ├── hash_tables/
     │   └── counting_technique/
     │
+    ├── dots_and_segments/
+    │   ├── dots_method/
+    │   ├── segments_method/
+    │   └── two_pointers_on_segments/
+    │
     └── two_pointers/
         ├── fast_and_slow/
         ├── from_two_sides/
@@ -49,6 +54,12 @@ Each directory focuses on a particular pattern and contains small examples desig
 #### [Hash Tables](patterns/hash_tables/)
 
 - [Counting Technique](patterns/hash_tables/counting_technique/)
+
+#### [Dots and Segments](patterns/dots_and_segments/)
+
+- [Dots Method](patterns/dots_and_segments/dots_method/)
+- [Segments Method](patterns/dots_and_segments/segments_method/)
+- [Two Pointers on Segments](patterns/dots_and_segments/two_pointers_on_segments/)
 
 #### [Two Pointers](patterns/two_pointers/)
 

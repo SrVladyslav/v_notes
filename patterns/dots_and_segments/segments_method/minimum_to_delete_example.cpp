@@ -12,17 +12,9 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include "./../utils.h"
 
 using namespace std;
-
-void print_segments(const vector<vector<int>> &segments, string text = "Segments: ")
-{
-    cout << text << endl;
-    for (auto segment : segments)
-    {
-        cout << "[" << segment[0] << " " << segment[1] << "]  ";
-    }
-}
 
 bool is_intersection(const vector<int> &i1, const vector<int> &i2)
 {
