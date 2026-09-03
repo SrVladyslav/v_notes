@@ -1,4 +1,4 @@
-# v_notes
+# AlgoNotes
 
 A practical collection of **algorithmic patterns and problem-solving techniques**, implemented mainly in **Modern C++** and **Python**.
 
@@ -20,7 +20,7 @@ Once the underlying pattern becomes familiar, new problems become much easier to
 > This index may change over time
 
 ```text
-v_notes/
+AlgoNotes/
 └── patterns/
     ├── floating_window/
     │   ├── fixed_size_window/
@@ -34,6 +34,15 @@ v_notes/
     ├── hash_tables/
     │   ├── counting_technique/
     │   └── key_value/
+    │
+    ├── linked_lists/
+    │   ├── basic_operations/
+    │   ├── dummy_node/
+    │   └── partial_reversal_technique/
+    │
+    ├── prefix_sums/
+    │   ├── running_prefix/
+    │   └── sum_matrix/
     │
     ├── dots_and_segments/
     │   ├── dots_method/
@@ -71,6 +80,17 @@ Each directory focuses on a particular pattern and contains small examples desig
 - [Counting Technique](patterns/hash_tables/counting_technique/)
 - [Key Value](patterns/hash_tables/key_value/)
 
+#### [Linked Lists](patterns/linked_lists/)
+
+- [Basic Operations](patterns/linked_lists/basic_operations/)
+- [Dummy Node](patterns/linked_lists/dummy_node/)
+- [Partial Reversal Technique](patterns/linked_lists/partial_reversal_technique/)
+
+#### [Prefix Sums](patterns/prefix_sums/)
+
+- [Running Prefix](patterns/prefix_sums/running_prefix/)
+- [Sum Matrix](patterns/prefix_sums/sum_matrix/)
+
 #### [Dots and Segments](patterns/dots_and_segments/)
 
 - [Dots Method](patterns/dots_and_segments/dots_method/)
@@ -88,6 +108,13 @@ Each directory focuses on a particular pattern and contains small examples desig
 - [Monotonic Stack](patterns/stack/monotonic_stack/)
 - [Pseudo Stack](patterns/stack/pseudo_stack/)
 - [Stack of Intermediate Results](patterns/stack/stack_of_intermediate_results/)
+
+## Tips
+
+Beyond the per-pattern examples, some topics have extra notes on specific gotchas worth keeping in mind while solving problems:
+
+- [Linked Lists](tips/LINKED_LISTS.md) — when it's safe to share a middle node vs. when the list must be cut before rewiring pointers.
+- [Matrices](tips/MATRICES.md) — index formulas for rows, columns, and both diagonals of a matrix cell.
 
 ## Languages
 
@@ -187,7 +214,6 @@ but rather:
 
 More patterns and examples will be added over time, including topics such as:
 
-- Prefix sums
 - Heaps
 - Trees
 - Graphs
@@ -197,4 +223,4 @@ More patterns and examples will be added over time, including topics such as:
 
 ---
 
-**v_notes** — algorithm patterns to refresh the brain after spending too much time writing APIs or using LLMs. You have the problem statements on top of the code, so you can easily try it for yourself before reading the explanation.
+**AlgoNotes** — algorithm patterns to refresh the brain after spending too much time writing APIs or using LLMs. You have the problem statements on top of the code, so you can easily try it for yourself before reading the explanation.
